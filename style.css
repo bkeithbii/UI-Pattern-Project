@@ -1,11 +1,41 @@
-* {
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /* * {
   box-sizing: border-box;
 }
 
 body {
   height: 100%;
   display: flex;
-  align-items: stretch;
+  align-items: center;
   justify-content: center;
   text-align: center;
 }
@@ -32,9 +62,9 @@ a:focus {
 }
 
 .head {
-    background-color: black;
-    color: white;
-    text-align: center;
+  background-color: black;
+  color: white;
+  text-align: center;
 }
 
 .slide-wrap {
@@ -63,22 +93,19 @@ a:focus {
 }
 
 .slideshow::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
+  width: 10px;
+  height: 10px;
 }
 .slideshow::-webkit-scrollbar-thumb {
-    background: black;
-    border-radius: 5px;
+  background: black;
+  border-radius: 5px;
 }
 .slideshow::-webkit-scrollbar-track {
-    background: transparent;
+  background: transparent;
 }
-
 
 .slide {
-  width: 200px;
+  width: 600px;
   height: 50%;
   flex-shrink: 0;
-}
-
-
+} */ */
