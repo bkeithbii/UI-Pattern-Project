@@ -24,3 +24,8 @@ prevButt.addEventListener("click", function(e) {
   counter--;
   slideshowSlide.style.transform = "translateX(" + -size * counter + "px)";
 });
+
+//Test the transition of the slideshow
+slideshowSlide.addEventListener("transitionend", function(e) {
+  console.log("working");
+});
