@@ -2,18 +2,83 @@
   box-sizing: border-box;
 }
 
-.slideshow {
-  width: 400px;
-  height: 400px;
-  overflow-x: auto;
+body {
+  height: 100%;
   display: flex;
-  -webkit-overflow-scrolling: touch;
-  scroll-snap-type: x mandatory;
+  align-items: stretch;
+  justify-content: center;
   text-align: center;
 }
 
+a {
+  display: inline-flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: black;
+  color: white;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 0 0.5rem 0;
+  position: relative;
+}
+
+a:active {
+  top: 1px;
+}
+a:focus {
+  background: #999999;
+}
+
+.head {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.slide-wrap {
+  width: 600px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.slideshow {
+  width: 600px;
+  height: 400px;
+  overflow-x: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scroll-snap-align: start
+  text-align: center;
+  border-radius: 10px;
+  border: 10px solid red;
+  border-style: dashed outset dashed inset;
+  border-width: 20px;
+  font-size: 80px;
+}
+
+.slideshow::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+.slideshow::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 5px;
+}
+.slideshow::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
 .slide {
-  width: 400px;
-  height: 100%;
+  width: 200px;
+  height: 50%;
   flex-shrink: 0;
 }
+
+
