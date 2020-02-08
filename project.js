@@ -14,12 +14,14 @@ slideshowSlide.style.transform = "translateX(" + -size * counter + "px)";
 
 //Add event listeners for buttons
 nextButt.addEventListener("click", function(e) {
+  if (counter >= slideshowImages.length - 1) return;
   slideshowSlide.style.transition = "transform 0.4s ease-in-out";
   counter++;
   slideshowSlide.style.transform = "translateX(" + -size * counter + "px)";
 });
 
 prevButt.addEventListener("click", function(e) {
+  if (counter <= 0) return;
   slideshowSlide.style.transition = "transform 0.4s ease-in-out";
   counter--;
   slideshowSlide.style.transform = "translateX(" + -size * counter + "px)";
@@ -27,5 +29,14 @@ prevButt.addEventListener("click", function(e) {
 
 //Test the transition of the slideshow
 slideshowSlide.addEventListener("transitionend", function(e) {
-  console.log("working");
+  if (slideshowImages[counter].id === "lastClone") {
+    slideshowSlide.style.transition = "none";
+    counter = slideshowImages.length - 2;
+    slideshowSlide.style.transform = "translateX(" + -size * counter + "px)";
+  }
+  if (slideshowImages[counter].id === "firstClone") {
+    slideshowSlide.style.transition = "none";
+    counter = slideshowImages.length - counter;
+    slideshowSlide.style.transform = "translateX(" + -size * counter + "px)";
+  }
 });
