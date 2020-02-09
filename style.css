@@ -7,10 +7,11 @@
  .slideshow-container {
      width: 350px;
      height: 254px;
-     margin: auto;
+     margin: 175px auto;
      overflow: hidden;
      border: 5px solid black;
      position: relative;
+     
  }
  
  .slideshow-slide {
@@ -27,7 +28,7 @@
     z-index: 10;
     left: 5%;
     font-size: 30px;
-    color: white;
+    color: orange;
     opacity: 0.5;
     cursor: pointer;
  }
@@ -38,7 +39,7 @@
     right: 5%;
     font-size: 30px;
     opacity: 0.5;
-    color: white;
+    color: orange;
     cursor: pointer;
   }
 
