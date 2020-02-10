@@ -15,14 +15,14 @@ slideshowSlide.style.transform = "translateX(" + -size * counter + "px)";
 //Add event listeners for buttons
 nextButt.addEventListener("click", function(e) {
   if (counter >= slideshowImages.length - 1) return;
-  slideshowSlide.style.transition = "transform 0.5s ease-in-out";
+  slideshowSlide.style.transition = "transform 0.75s ease-in-out";
   counter++;
   slideshowSlide.style.transform = "translateX(" + -size * counter + "px)";
 });
 
 prevButt.addEventListener("click", function(e) {
   if (counter <= 0) return;
-  slideshowSlide.style.transition = "transform 0.5s ease-in-out";
+  slideshowSlide.style.transition = "transform 0.75s ease-in-out";
   counter--;
   slideshowSlide.style.transform = "translateX(" + -size * counter + "px)";
 });

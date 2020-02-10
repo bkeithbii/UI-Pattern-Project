@@ -23,13 +23,13 @@ body {
   text-align: center;
   font-family: "Bebas Neue", cursive;
   font-size: 30px;
-  text-decoration: underline;
+  font-weight: bold;
 }
 
 .slideshow-container {
   width: 350px;
   height: 254px;
-  margin: 100px auto;
+  margin: 120px auto;
   overflow: hidden;
   border: 5px dashed white;
   position: relative;
@@ -44,12 +44,21 @@ body {
   background-position: center;
 }
 
+.playerNames {
+  color: white;
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  font-size: 26px;
+  margin-top: 50px;
+  margin-bottom: -75px;
+  text-decoration: underline;
+}
 .playerBios {
   color: white;
   text-align: center;
   font-family: "Orbitron", sans-serif;
   font-size: 18px;
-  margin-top: -65px;
+  margin-top: -100px;
   line-height: 30px;
 }
 

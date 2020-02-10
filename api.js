@@ -6,6 +6,7 @@ let url = "https://www.balldontlie.io/api/v1/players/";
 let hardenButton = document.querySelector("#harden");
 
 let firstBio = document.querySelector("#hardenBio");
+let firstName = document.querySelector("#hardenName");
 
 hardenButton.addEventListener("click", hardenBio);
 hardenButton.addEventListener("mouseout", nohardenBio);
@@ -21,13 +22,8 @@ function hardenBio(e) {
     .then(res => {
       console.log("success");
       console.log(res);
+      firstName.innerHTML = res.first_name + " " + res.last_name;
       firstBio.innerHTML =
-        "Name: " +
-        res.first_name +
-        " " +
-        res.last_name +
-        "<br />" +
-        "Team: " +
         res.team.full_name +
         "<br />" +
         "Position: " +
@@ -39,7 +35,9 @@ function hardenBio(e) {
         res.height_inches +
         "<br />" +
         "Weight: " +
-        res.weight_pounds;
+        res.weight_pounds +
+        "<br />" +
+        "PPG: 35.3";
     })
     .catch(err => {
       console.log("failed", err);
@@ -57,6 +55,7 @@ function nohardenBio(e) {
     .then(res => {
       console.log("success");
       console.log(res);
+      firstName.innerHTML = "";
       firstBio.innerHTML = "";
     })
     .catch(err => {
@@ -68,6 +67,7 @@ function nohardenBio(e) {
 let freakButton = document.querySelector("#freak");
 
 let secondBio = document.querySelector("#freakBio");
+let secondName = document.querySelector("#freakName");
 
 freakButton.addEventListener("click", freakBio);
 freakButton.addEventListener("mouseout", nofreakBio);
@@ -83,13 +83,8 @@ function freakBio(e) {
     .then(res => {
       console.log("success");
       console.log(res);
+      secondName.innerHTML = res.first_name + " " + res.last_name;
       secondBio.innerHTML =
-        "Name: " +
-        res.first_name +
-        " " +
-        res.last_name +
-        "<br />" +
-        "Team: " +
         res.team.full_name +
         "<br />" +
         "Position: " +
@@ -101,7 +96,9 @@ function freakBio(e) {
         res.height_inches +
         "<br />" +
         "Weight: " +
-        res.weight_pounds;
+        res.weight_pounds +
+        "<br />" +
+        "PPG: 30.0";
     })
     .catch(err => {
       console.log("failed", err);
@@ -119,6 +116,7 @@ function nofreakBio(e) {
     .then(res => {
       console.log("success");
       console.log(res);
+      secondName.innerHTML = "";
       secondBio.innerHTML = "";
     })
     .catch(err => {
@@ -130,6 +128,7 @@ function nofreakBio(e) {
 let dameButton = document.querySelector("#dame");
 
 let thirdBio = document.querySelector("#dameBio");
+let thirdName = document.querySelector("#dameName");
 
 dameButton.addEventListener("click", dameBio);
 dameButton.addEventListener("mouseout", nodameBio);
@@ -145,13 +144,8 @@ function dameBio(e) {
     .then(res => {
       console.log("success");
       console.log(res);
+      thirdName.innerHTML = res.first_name + " " + res.last_name;
       thirdBio.innerHTML =
-        "Name: " +
-        res.first_name +
-        " " +
-        res.last_name +
-        "<br />" +
-        "Team: " +
         res.team.full_name +
         "<br />" +
         "Position: " +
@@ -163,7 +157,9 @@ function dameBio(e) {
         res.height_inches +
         "<br />" +
         "Weight: " +
-        res.weight_pounds;
+        res.weight_pounds +
+        "<br />" +
+        "PPG: 29.8";
     })
     .catch(err => {
       console.log("failed", err);
@@ -181,6 +177,7 @@ function nodameBio(e) {
     .then(res => {
       console.log("success");
       console.log(res);
+      thirdName.innerHTML = "";
       thirdBio.innerHTML = "";
     })
     .catch(err => {
@@ -192,6 +189,7 @@ function nodameBio(e) {
 let traeButton = document.querySelector("#trae");
 
 let fourthBio = document.querySelector("#traeBio");
+let fourthName = document.querySelector("#traeName");
 
 traeButton.addEventListener("click", traeBio);
 traeButton.addEventListener("mouseout", notraeBio);
@@ -207,13 +205,8 @@ function traeBio(e) {
     .then(res => {
       console.log("success");
       console.log(res);
+      fourthName.innerHTML = res.first_name + " " + res.last_name;
       fourthBio.innerHTML =
-        "Name: " +
-        res.first_name +
-        " " +
-        res.last_name +
-        "<br />" +
-        "Team: " +
         res.team.full_name +
         "<br />" +
         "Position: " +
@@ -225,7 +218,9 @@ function traeBio(e) {
         res.height_inches +
         "<br />" +
         "Weight: " +
-        res.weight_pounds;
+        res.weight_pounds +
+        "<br />" +
+        "PPG: 29.3";
     })
     .catch(err => {
       console.log("failed", err);
@@ -243,6 +238,7 @@ function notraeBio(e) {
     .then(res => {
       console.log("success");
       console.log(res);
+      fourthName.innerHTML = "";
       fourthBio.innerHTML = "";
     })
     .catch(err => {
@@ -254,6 +250,7 @@ function notraeBio(e) {
 let bealButton = document.querySelector("#beal");
 
 let fifthBio = document.querySelector("#bealBio");
+let fifthName = document.querySelector("#bealName");
 
 bealButton.addEventListener("click", bealBio);
 bealButton.addEventListener("mouseout", nobealBio);
@@ -269,13 +266,8 @@ function bealBio(e) {
     .then(res => {
       console.log("success");
       console.log(res);
+      fifthName.innerHTML = res.first_name + " " + res.last_name;
       fifthBio.innerHTML =
-        "Name: " +
-        res.first_name +
-        " " +
-        res.last_name +
-        "<br />" +
-        "Team: " +
         res.team.full_name +
         "<br />" +
         "Position: " +
@@ -287,7 +279,9 @@ function bealBio(e) {
         res.height_inches +
         "<br />" +
         "Weight: " +
-        res.weight_pounds;
+        res.weight_pounds +
+        "<br />" +
+        "PPG: 29.2";
     })
     .catch(err => {
       console.log("failed", err);
@@ -305,6 +299,7 @@ function nobealBio(e) {
     .then(res => {
       console.log("success");
       console.log(res);
+      fifthName.innerHTML = "";
       fifthBio.innerHTML = "";
     })
     .catch(err => {
@@ -316,6 +311,7 @@ function nobealBio(e) {
 let lukaButton = document.querySelector("#luka");
 
 let sixthBio = document.querySelector("#lukaBio");
+let sixthName = document.querySelector("#lukaName");
 
 lukaButton.addEventListener("click", lukaBio);
 lukaButton.addEventListener("mouseout", nolukaBio);
@@ -331,13 +327,8 @@ function lukaBio(e) {
     .then(res => {
       console.log("success");
       console.log(res);
+      sixthName.innerHTML = res.first_name + " " + res.last_name;
       sixthBio.innerHTML =
-        "Name: " +
-        res.first_name +
-        " " +
-        res.last_name +
-        "<br />" +
-        "Team: " +
         res.team.full_name +
         "<br />" +
         "Position: " +
@@ -349,7 +340,9 @@ function lukaBio(e) {
         res.height_inches +
         "<br />" +
         "Weight: " +
-        res.weight_pounds;
+        res.weight_pounds +
+        "<br />" +
+        "PPG: 28.8";
     })
     .catch(err => {
       console.log("failed", err);
@@ -367,6 +360,7 @@ function nolukaBio(e) {
     .then(res => {
       console.log("success");
       console.log(res);
+      sixthName.innerHTML = "";
       sixthBio.innerHTML = "";
     })
     .catch(err => {
@@ -378,6 +372,7 @@ function nolukaBio(e) {
 let kawhiButton = document.querySelector("#kawhi");
 
 let seventhBio = document.querySelector("#kawhiBio");
+let seventhName = document.querySelector("#kawhiName");
 
 kawhiButton.addEventListener("click", kawhiBio);
 kawhiButton.addEventListener("mouseout", nokawhiBio);
@@ -393,13 +388,8 @@ function kawhiBio(e) {
     .then(res => {
       console.log("success");
       console.log(res);
+      seventhName.innerHTML = res.first_name + " " + res.last_name;
       seventhBio.innerHTML =
-        "Name: " +
-        res.first_name +
-        " " +
-        res.last_name +
-        "<br />" +
-        "Team: " +
         res.team.full_name +
         "<br />" +
         "Position: " +
@@ -411,7 +401,9 @@ function kawhiBio(e) {
         res.height_inches +
         "<br />" +
         "Weight: " +
-        res.weight_pounds;
+        res.weight_pounds +
+        "<br />" +
+        "PPG: 27.1";
     })
     .catch(err => {
       console.log("failed", err);
@@ -429,6 +421,7 @@ function nokawhiBio(e) {
     .then(res => {
       console.log("success");
       console.log(res);
+      seventhName.innerHTML = "";
       seventhBio.innerHTML = "";
     })
     .catch(err => {
@@ -440,6 +433,7 @@ function nokawhiBio(e) {
 let dbookButton = document.querySelector("#dbook");
 
 let eigthBio = document.querySelector("#dbookBio");
+let eigthName = document.querySelector("#dbookName");
 
 dbookButton.addEventListener("click", dbookBio);
 dbookButton.addEventListener("mouseout", nodbookBio);
@@ -455,13 +449,8 @@ function dbookBio(e) {
     .then(res => {
       console.log("success");
       console.log(res);
+      eigthName.innerHTML = res.first_name + " " + res.last_name;
       eigthBio.innerHTML =
-        "Name: " +
-        res.first_name +
-        " " +
-        res.last_name +
-        "<br />" +
-        "Team: " +
         res.team.full_name +
         "<br />" +
         "Position: " +
@@ -473,7 +462,9 @@ function dbookBio(e) {
         res.height_inches +
         "<br />" +
         "Weight: " +
-        res.weight_pounds;
+        res.weight_pounds +
+        "<br />" +
+        "PPG: 26.7";
     })
     .catch(err => {
       console.log("failed", err);
@@ -491,6 +482,7 @@ function nodbookBio(e) {
     .then(res => {
       console.log("success");
       console.log(res);
+      eigthName.innerHTML = "";
       eigthBio.innerHTML = "";
     })
     .catch(err => {
@@ -502,6 +494,7 @@ function nodbookBio(e) {
 let russButton = document.querySelector("#russ");
 
 let ninthBio = document.querySelector("#russBio");
+let ninthName = document.querySelector("#russName");
 
 russButton.addEventListener("click", russBio);
 russButton.addEventListener("mouseout", norussBio);
@@ -517,13 +510,8 @@ function russBio(e) {
     .then(res => {
       console.log("success");
       console.log(res);
+      ninthName.innerHTML = res.first_name + " " + res.last_name;
       ninthBio.innerHTML =
-        "Name: " +
-        res.first_name +
-        " " +
-        res.last_name +
-        "<br />" +
-        "Team: " +
         res.team.full_name +
         "<br />" +
         "Position: " +
@@ -535,7 +523,9 @@ function russBio(e) {
         res.height_inches +
         "<br />" +
         "Weight: " +
-        res.weight_pounds;
+        res.weight_pounds +
+        "<br />" +
+        "PPG: 26.7";
     })
     .catch(err => {
       console.log("failed", err);
@@ -553,6 +543,7 @@ function norussBio(e) {
     .then(res => {
       console.log("success");
       console.log(res);
+      ninthName.innerHTML = "";
       ninthBio.innerHTML = "";
     })
     .catch(err => {
@@ -564,6 +555,7 @@ function norussBio(e) {
 let adButton = document.querySelector("#ad");
 
 let tenthBio = document.querySelector("#adBio");
+let tenthName = document.querySelector("#adName");
 
 adButton.addEventListener("click", adBio);
 adButton.addEventListener("mouseout", noadBio);
@@ -579,13 +571,8 @@ function adBio(e) {
     .then(res => {
       console.log("success");
       console.log(res);
+      tenthName.innerHTML = res.first_name + " " + res.last_name;
       tenthBio.innerHTML =
-        "Name: " +
-        res.first_name +
-        " " +
-        res.last_name +
-        "<br />" +
-        "Team: " +
         res.team.full_name +
         "<br />" +
         "Position: " +
@@ -597,7 +584,9 @@ function adBio(e) {
         res.height_inches +
         "<br />" +
         "Weight: " +
-        res.weight_pounds;
+        res.weight_pounds +
+        "<br />" +
+        "PPG: 26.5";
     })
     .catch(err => {
       console.log("failed", err);
@@ -615,6 +604,7 @@ function noadBio(e) {
     .then(res => {
       console.log("success");
       console.log(res);
+      tenthName.innerHTML = "";
       tenthBio.innerHTML = "";
     })
     .catch(err => {
@@ -626,6 +616,7 @@ function noadBio(e) {
 let lbjButton = document.querySelector("#lbj");
 
 let eleventhBio = document.querySelector("#lbjBio");
+let eleventhName = document.querySelector("#lbjName");
 
 lbjButton.addEventListener("click", lbjBio);
 lbjButton.addEventListener("mouseout", nolbjBio);
@@ -641,13 +632,8 @@ function lbjBio(e) {
     .then(res => {
       console.log("success");
       console.log(res);
+      eleventhName.innerHTML = res.first_name + " " + res.last_name;
       eleventhBio.innerHTML =
-        "Name: " +
-        res.first_name +
-        " " +
-        res.last_name +
-        "<br />" +
-        "Team: " +
         res.team.full_name +
         "<br />" +
         "Position: " +
@@ -659,7 +645,9 @@ function lbjBio(e) {
         res.height_inches +
         "<br />" +
         "Weight: " +
-        res.weight_pounds;
+        res.weight_pounds +
+        "<br />" +
+        "PPG: 25.0";
     })
     .catch(err => {
       console.log("failed", err);
@@ -677,6 +665,7 @@ function nolbjBio(e) {
     .then(res => {
       console.log("success");
       console.log(res);
+      eleventhName.innerHTML = "";
       eleventhBio.innerHTML = "";
     })
     .catch(err => {
@@ -688,6 +677,7 @@ function nolbjBio(e) {
 let lavineButton = document.querySelector("#lavine");
 
 let twelthBio = document.querySelector("#lavineBio");
+let twelthName = document.querySelector("#lavineName");
 
 lavineButton.addEventListener("click", lavineBio);
 lavineButton.addEventListener("mouseout", nolavineBio);
@@ -703,13 +693,8 @@ function lavineBio(e) {
     .then(res => {
       console.log("success");
       console.log(res);
+      twelthName.innerHTML = res.first_name + " " + res.last_name;
       twelthBio.innerHTML =
-        "Name: " +
-        res.first_name +
-        " " +
-        res.last_name +
-        "<br />" +
-        "Team: " +
         res.team.full_name +
         "<br />" +
         "Position: " +
@@ -721,7 +706,9 @@ function lavineBio(e) {
         res.height_inches +
         "<br />" +
         "Weight: " +
-        res.weight_pounds;
+        res.weight_pounds +
+        "<br />" +
+        "PPG: 24.9";
     })
     .catch(err => {
       console.log("failed", err);
@@ -739,6 +726,7 @@ function nolavineBio(e) {
     .then(res => {
       console.log("success");
       console.log(res);
+      twelthName.innerHTML = "";
       twelthBio.innerHTML = "";
     })
     .catch(err => {
@@ -750,6 +738,7 @@ function nolavineBio(e) {
 let biButton = document.querySelector("#bi");
 
 let thirteenthBio = document.querySelector("#biBio");
+let thirteenthName = document.querySelector("#biName");
 
 biButton.addEventListener("click", biBio);
 biButton.addEventListener("mouseout", nobiBio);
@@ -765,13 +754,8 @@ function biBio(e) {
     .then(res => {
       console.log("success");
       console.log(res);
+      thirteenthName.innerHTML = res.first_name + " " + res.last_name;
       thirteenthBio.innerHTML =
-        "Name: " +
-        res.first_name +
-        " " +
-        res.last_name +
-        "<br />" +
-        "Team: " +
         res.team.full_name +
         "<br />" +
         "Position: " +
@@ -783,7 +767,9 @@ function biBio(e) {
         res.height_inches +
         "<br />" +
         "Weight: " +
-        res.weight_pounds;
+        res.weight_pounds +
+        "<br />" +
+        "PPG: 24.9";
     })
     .catch(err => {
       console.log("failed", err);
@@ -801,6 +787,7 @@ function nobiBio(e) {
     .then(res => {
       console.log("success");
       console.log(res);
+      thirteenthName.innerHTML = "";
       thirteenthBio.innerHTML = "";
     })
     .catch(err => {
@@ -812,6 +799,7 @@ function nobiBio(e) {
 let dmitchButton = document.querySelector("#dmitch");
 
 let fourteenthBio = document.querySelector("#dmitchBio");
+let fourteenthName = document.querySelector("#dmitchName");
 
 dmitchButton.addEventListener("click", dmitchBio);
 dmitchButton.addEventListener("mouseout", nodmitchBio);
@@ -827,13 +815,8 @@ function dmitchBio(e) {
     .then(res => {
       console.log("success");
       console.log(res);
+      fourteenthName.innerHTML = res.first_name + " " + res.last_name;
       fourteenthBio.innerHTML =
-        "Name: " +
-        res.first_name +
-        " " +
-        res.last_name +
-        "<br />" +
-        "Team: " +
         res.team.full_name +
         "<br />" +
         "Position: " +
@@ -845,7 +828,9 @@ function dmitchBio(e) {
         res.height_inches +
         "<br />" +
         "Weight: " +
-        res.weight_pounds;
+        res.weight_pounds +
+        "<br />" +
+        "PPG: 24.3";
     })
     .catch(err => {
       console.log("failed", err);
@@ -863,6 +848,7 @@ function nodmitchBio(e) {
     .then(res => {
       console.log("success");
       console.log(res);
+      fourteenthName.innerHTML = "";
       fourteenthBio.innerHTML = "";
     })
     .catch(err => {
@@ -874,6 +860,7 @@ function nodmitchBio(e) {
 let siakamButton = document.querySelector("#siakam");
 
 let fifteenthBio = document.querySelector("#siakamBio");
+let fifteenthName = document.querySelector("#siakamName");
 
 siakamButton.addEventListener("click", siakamBio);
 siakamButton.addEventListener("mouseout", nosiakamBio);
@@ -889,13 +876,8 @@ function siakamBio(e) {
     .then(res => {
       console.log("success");
       console.log(res);
+      fifteenthName.innerHTML = res.first_name + " " + res.last_name;
       fifteenthBio.innerHTML =
-        "Name: " +
-        res.first_name +
-        " " +
-        res.last_name +
-        "<br />" +
-        "Team: " +
         res.team.full_name +
         "<br />" +
         "Position: " +
@@ -907,7 +889,9 @@ function siakamBio(e) {
         res.height_inches +
         "<br />" +
         "Weight: " +
-        res.weight_pounds;
+        res.weight_pounds +
+        "<br />" +
+        "PPG: 23.4";
     })
     .catch(err => {
       console.log("failed", err);
@@ -925,6 +909,7 @@ function nosiakamBio(e) {
     .then(res => {
       console.log("success");
       console.log(res);
+      fifteenthName.innerHTML = "";
       fifteenthBio.innerHTML = "";
     })
     .catch(err => {
