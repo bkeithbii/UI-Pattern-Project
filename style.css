@@ -41,6 +41,9 @@ body {
 .playerBios {
   color: white;
   text-align: center;
+  font-family: "Orbitron", sans-serif;
+  font-size: 18px;
+  margin-top: -65px;
 }
 
 #nbalogo {
