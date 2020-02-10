@@ -19,6 +19,12 @@ body {
 .header:hover {
   background-color: #ff0000;
 }
+.title {
+  text-align: center;
+  font-family: "Bebas Neue", cursive;
+  font-size: 30px;
+  text-decoration: underline;
+}
 
 .slideshow-container {
   width: 350px;
@@ -44,15 +50,16 @@ body {
   font-family: "Orbitron", sans-serif;
   font-size: 18px;
   margin-top: -65px;
+  line-height: 30px;
 }
 
 #nbalogo {
   background-size: contain;
-  height: 50px;
+  height: 70px;
 }
 #kobelogo {
   background-size: contain;
-  height: 50px;
+  height: 70px;
 }
 
 #prevButt {
