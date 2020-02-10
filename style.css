@@ -1,150 +1,74 @@
- * {
-     padding: 0px;
-     margin: 0px;
-     box-sizing: border-box;
- }
- 
- .slideshow-container {
-     width: 350px;
-     height: 254px;
-     margin: 175px auto;
-     overflow: hidden;
-     border: 5px solid black;
-     position: relative;
-     
- }
- 
- .slideshow-slide {
-     display: flex; 
-     width: 100%;
-     height: 100%;
-     /* background-size: contain; */
-     background-position: center;
- }
-
-#prevButt {
-    position: absolute;
-    top: 50%;
-    z-index: 10;
-    left: 5%;
-    font-size: 30px;
-    color: orange;
-    opacity: 0.5;
-    cursor: pointer;
- }
-#nextButt {
-    position: absolute;
-    top: 50%;
-    z-index: 10;
-    right: 5%;
-    font-size: 30px;
-    opacity: 0.5;
-    color: orange;
-    cursor: pointer;
-  }
-
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- /* * {
+* {
+  padding: 0px;
+  margin: 0px;
   box-sizing: border-box;
 }
 
 body {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-a {
-  display: inline-flex;
-  width: 1.5rem;
-  height: 1.5rem;
-  background: black;
-  color: white;
-  text-decoration: none;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  margin: 0 0 0.5rem 0;
-  position: relative;
-}
-
-a:active {
-  top: 1px;
-}
-a:focus {
-  background: #999999;
-}
-
-.head {
   background-color: black;
+}
+
+.header {
+  color: white;
+  background-color: #0066ff;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header:hover {
+  background-color: #ff0000;
+}
+
+.slideshow-container {
+  width: 350px;
+  height: 254px;
+  margin: 100px auto;
+  overflow: hidden;
+  border: 5px dashed white;
+  position: relative;
+  display: flex;
+}
+
+.slideshow-slide {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  /* background-size: contain; */
+  background-position: center;
+}
+
+.playerBios {
   color: white;
   text-align: center;
 }
 
-.slide-wrap {
-  width: 600px;
-  text-align: center;
-  overflow: hidden;
+#nbalogo {
+  background-size: contain;
+  height: 50px;
+}
+#kobelogo {
+  background-size: contain;
+  height: 50px;
 }
 
-.slideshow {
-  width: 600px;
-  height: 400px;
-  overflow-x: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  -webkit-overflow-scrolling: touch;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  scroll-snap-align: start
-  text-align: center;
-  border-radius: 10px;
-  border: 10px solid red;
-  border-style: dashed outset dashed inset;
-  border-width: 20px;
-  font-size: 80px;
+#prevButt {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  left: 5%;
+  font-size: 30px;
+  color: orange;
+  opacity: 0.5;
+  cursor: pointer;
 }
-
-.slideshow::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
+#nextButt {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  right: 5%;
+  font-size: 30px;
+  opacity: 0.5;
+  color: orange;
+  cursor: pointer;
 }
-.slideshow::-webkit-scrollbar-thumb {
-  background: black;
-  border-radius: 5px;
-}
-.slideshow::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.slide {
-  width: 600px;
-  height: 50%;
-  flex-shrink: 0;
-} */ */

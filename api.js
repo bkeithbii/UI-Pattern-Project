@@ -1,59 +1,46 @@
 //Began fetching biography info for characters from API
 
-//Access token - 10222160096055616
+let url = "https://www.balldontlie.io/api/v1/players/";
 
-// fetch("https://superheroapi.com/api/10222160096055616/226/biography/", {
-//   method: "GET"
-// });
+let hardenButton = document.querySelector("#harden");
 
-// let url = "https://superheroapi.com/api/10222160096055616/";
+let firstBio = document.querySelector("#hardenBio");
 
-// let drStrange = document.querySelector("#strangeBio");
+function hardenBio(e) {
+  e.preventDefault();
+  let newUrl = url + "192/";
 
-// let dsbutton = document.querySelector("#strange");
+  fetch(newUrl)
+    .then(res => {
+      return res.json();
+    })
+    .then(res => {
+      console.log("success");
+      console.log(res);
+      firstBio.innerText = res.first_name + " " + res.last_name;
+    })
+    .catch(err => {
+      console.log("failed", err);
+    });
+}
 
-// dsbutton.addEventListener("click", drstrangeBio);
+function nohardenBio(e) {
+  e.preventDefault();
+  let newUrl = url + "192/";
 
-// function drstrangeBio(e) {
-//   e.preventDefault();
-//   let drUrl = url + "226/" + "biography/";
+  fetch(newUrl)
+    .then(res => {
+      return res.json();
+    })
+    .then(res => {
+      console.log("success");
+      console.log(res);
+      firstBio.innerText = "";
+    })
+    .catch(err => {
+      console.log("failed", err);
+    });
+}
 
-//   fetch(drUrl)
-//     .then(res => {
-//       return res.json();
-//     })
-//     .then(res => {
-//       console.log("success");
-//       console.log(res);
-//       drStrange.innerText = res.name + " " + "(" + res.aliases + ")";
-//     })
-//     .catch(err => {
-//       console.log("failed", err);
-//     });
-// }
-
-// let url = "https://www.balldontlie.io/api/v1/players/";
-
-// let drStrange = document.querySelector("#hardenBio");
-
-// let dsbutton = document.querySelector("#harden");
-
-// dsbutton.addEventListener("click", jhardenBio);
-
-// function jhardenBio(e) {
-//   e.preventDefault();
-//   let drUrl = url + "140/";
-
-//   fetch(drUrl)
-//     .then(res => {
-//       return res.json();
-//     })
-//     .then(res => {
-//       console.log("success");
-//       console.log(res);
-//       hardenBio.innerText = res.first_name + " " + res.last_name;
-//     })
-//     .catch(err => {
-//       console.log("failed", err);
-//     });
-// }
+hardenButton.addEventListener("click", hardenBio);
+hardenButton.addEventListener("mouseout", nohardenBio);
