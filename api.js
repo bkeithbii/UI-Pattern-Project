@@ -83,7 +83,25 @@ function freakBio(e) {
     .then(res => {
       console.log("success");
       console.log(res);
-      secondBio.innerHTML = res.first_name + " " + res.last_name;
+      secondBio.innerHTML =
+        "Name: " +
+        res.first_name +
+        " " +
+        res.last_name +
+        "<br />" +
+        "Team: " +
+        res.team.full_name +
+        "<br />" +
+        "Position: " +
+        res.position +
+        "<br />" +
+        "Height: " +
+        res.height_feet +
+        "'" +
+        res.height_inches +
+        "<br />" +
+        "Weight: " +
+        res.weight_pounds;
     })
     .catch(err => {
       console.log("failed", err);
@@ -127,7 +145,25 @@ function dameBio(e) {
     .then(res => {
       console.log("success");
       console.log(res);
-      thirdBio.innerHTML = res.first_name + " " + res.last_name;
+      thirdBio.innerHTML =
+        "Name: " +
+        res.first_name +
+        " " +
+        res.last_name +
+        "<br />" +
+        "Team: " +
+        res.team.full_name +
+        "<br />" +
+        "Position: " +
+        res.position +
+        "<br />" +
+        "Height: " +
+        res.height_feet +
+        "'" +
+        res.height_inches +
+        "<br />" +
+        "Weight: " +
+        res.weight_pounds;
     })
     .catch(err => {
       console.log("failed", err);
@@ -171,7 +207,25 @@ function traeBio(e) {
     .then(res => {
       console.log("success");
       console.log(res);
-      fourthBio.innerHTML = res.first_name + " " + res.last_name;
+      fourthBio.innerHTML =
+        "Name: " +
+        res.first_name +
+        " " +
+        res.last_name +
+        "<br />" +
+        "Team: " +
+        res.team.full_name +
+        "<br />" +
+        "Position: " +
+        res.position +
+        "<br />" +
+        "Height: " +
+        res.height_feet +
+        "'" +
+        res.height_inches +
+        "<br />" +
+        "Weight: " +
+        res.weight_pounds;
     })
     .catch(err => {
       console.log("failed", err);
@@ -215,7 +269,25 @@ function bealBio(e) {
     .then(res => {
       console.log("success");
       console.log(res);
-      fifthBio.innerHTML = res.first_name + " " + res.last_name;
+      fifthBio.innerHTML =
+        "Name: " +
+        res.first_name +
+        " " +
+        res.last_name +
+        "<br />" +
+        "Team: " +
+        res.team.full_name +
+        "<br />" +
+        "Position: " +
+        res.position +
+        "<br />" +
+        "Height: " +
+        res.height_feet +
+        "'" +
+        res.height_inches +
+        "<br />" +
+        "Weight: " +
+        res.weight_pounds;
     })
     .catch(err => {
       console.log("failed", err);
@@ -259,7 +331,25 @@ function lukaBio(e) {
     .then(res => {
       console.log("success");
       console.log(res);
-      sixthBio.innerHTML = res.first_name + " " + res.last_name;
+      sixthBio.innerHTML =
+        "Name: " +
+        res.first_name +
+        " " +
+        res.last_name +
+        "<br />" +
+        "Team: " +
+        res.team.full_name +
+        "<br />" +
+        "Position: " +
+        res.position +
+        "<br />" +
+        "Height: " +
+        res.height_feet +
+        "'" +
+        res.height_inches +
+        "<br />" +
+        "Weight: " +
+        res.weight_pounds;
     })
     .catch(err => {
       console.log("failed", err);
@@ -303,7 +393,25 @@ function kawhiBio(e) {
     .then(res => {
       console.log("success");
       console.log(res);
-      seventhBio.innerHTML = res.first_name + " " + res.last_name;
+      seventhBio.innerHTML =
+        "Name: " +
+        res.first_name +
+        " " +
+        res.last_name +
+        "<br />" +
+        "Team: " +
+        res.team.full_name +
+        "<br />" +
+        "Position: " +
+        res.position +
+        "<br />" +
+        "Height: " +
+        res.height_feet +
+        "'" +
+        res.height_inches +
+        "<br />" +
+        "Weight: " +
+        res.weight_pounds;
     })
     .catch(err => {
       console.log("failed", err);
@@ -347,7 +455,25 @@ function dbookBio(e) {
     .then(res => {
       console.log("success");
       console.log(res);
-      eigthBio.innerHTML = res.first_name + " " + res.last_name;
+      eigthBio.innerHTML =
+        "Name: " +
+        res.first_name +
+        " " +
+        res.last_name +
+        "<br />" +
+        "Team: " +
+        res.team.full_name +
+        "<br />" +
+        "Position: " +
+        res.position +
+        "<br />" +
+        "Height: " +
+        res.height_feet +
+        "'" +
+        res.height_inches +
+        "<br />" +
+        "Weight: " +
+        res.weight_pounds;
     })
     .catch(err => {
       console.log("failed", err);
@@ -391,7 +517,25 @@ function russBio(e) {
     .then(res => {
       console.log("success");
       console.log(res);
-      ninthBio.innerHTML = res.first_name + " " + res.last_name;
+      ninthBio.innerHTML =
+        "Name: " +
+        res.first_name +
+        " " +
+        res.last_name +
+        "<br />" +
+        "Team: " +
+        res.team.full_name +
+        "<br />" +
+        "Position: " +
+        res.position +
+        "<br />" +
+        "Height: " +
+        res.height_feet +
+        "'" +
+        res.height_inches +
+        "<br />" +
+        "Weight: " +
+        res.weight_pounds;
     })
     .catch(err => {
       console.log("failed", err);
@@ -435,7 +579,25 @@ function adBio(e) {
     .then(res => {
       console.log("success");
       console.log(res);
-      tenthBio.innerHTML = res.first_name + " " + res.last_name;
+      tenthBio.innerHTML =
+        "Name: " +
+        res.first_name +
+        " " +
+        res.last_name +
+        "<br />" +
+        "Team: " +
+        res.team.full_name +
+        "<br />" +
+        "Position: " +
+        res.position +
+        "<br />" +
+        "Height: " +
+        res.height_feet +
+        "'" +
+        res.height_inches +
+        "<br />" +
+        "Weight: " +
+        res.weight_pounds;
     })
     .catch(err => {
       console.log("failed", err);
@@ -479,7 +641,25 @@ function lbjBio(e) {
     .then(res => {
       console.log("success");
       console.log(res);
-      eleventhBio.innerHTML = res.first_name + " " + res.last_name;
+      eleventhBio.innerHTML =
+        "Name: " +
+        res.first_name +
+        " " +
+        res.last_name +
+        "<br />" +
+        "Team: " +
+        res.team.full_name +
+        "<br />" +
+        "Position: " +
+        res.position +
+        "<br />" +
+        "Height: " +
+        res.height_feet +
+        "'" +
+        res.height_inches +
+        "<br />" +
+        "Weight: " +
+        res.weight_pounds;
     })
     .catch(err => {
       console.log("failed", err);
@@ -523,7 +703,25 @@ function lavineBio(e) {
     .then(res => {
       console.log("success");
       console.log(res);
-      twelthBio.innerHTML = res.first_name + " " + res.last_name;
+      twelthBio.innerHTML =
+        "Name: " +
+        res.first_name +
+        " " +
+        res.last_name +
+        "<br />" +
+        "Team: " +
+        res.team.full_name +
+        "<br />" +
+        "Position: " +
+        res.position +
+        "<br />" +
+        "Height: " +
+        res.height_feet +
+        "'" +
+        res.height_inches +
+        "<br />" +
+        "Weight: " +
+        res.weight_pounds;
     })
     .catch(err => {
       console.log("failed", err);
@@ -567,7 +765,25 @@ function biBio(e) {
     .then(res => {
       console.log("success");
       console.log(res);
-      thirteenthBio.innerHTML = res.first_name + " " + res.last_name;
+      thirteenthBio.innerHTML =
+        "Name: " +
+        res.first_name +
+        " " +
+        res.last_name +
+        "<br />" +
+        "Team: " +
+        res.team.full_name +
+        "<br />" +
+        "Position: " +
+        res.position +
+        "<br />" +
+        "Height: " +
+        res.height_feet +
+        "'" +
+        res.height_inches +
+        "<br />" +
+        "Weight: " +
+        res.weight_pounds;
     })
     .catch(err => {
       console.log("failed", err);
@@ -611,7 +827,25 @@ function dmitchBio(e) {
     .then(res => {
       console.log("success");
       console.log(res);
-      fourteenthBio.innerHTML = res.first_name + " " + res.last_name;
+      fourteenthBio.innerHTML =
+        "Name: " +
+        res.first_name +
+        " " +
+        res.last_name +
+        "<br />" +
+        "Team: " +
+        res.team.full_name +
+        "<br />" +
+        "Position: " +
+        res.position +
+        "<br />" +
+        "Height: " +
+        res.height_feet +
+        "'" +
+        res.height_inches +
+        "<br />" +
+        "Weight: " +
+        res.weight_pounds;
     })
     .catch(err => {
       console.log("failed", err);
@@ -655,7 +889,25 @@ function siakamBio(e) {
     .then(res => {
       console.log("success");
       console.log(res);
-      fifteenthBio.innerHTML = res.first_name + " " + res.last_name;
+      fifteenthBio.innerHTML =
+        "Name: " +
+        res.first_name +
+        " " +
+        res.last_name +
+        "<br />" +
+        "Team: " +
+        res.team.full_name +
+        "<br />" +
+        "Position: " +
+        res.position +
+        "<br />" +
+        "Height: " +
+        res.height_feet +
+        "'" +
+        res.height_inches +
+        "<br />" +
+        "Weight: " +
+        res.weight_pounds;
     })
     .catch(err => {
       console.log("failed", err);
