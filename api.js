@@ -9,7 +9,7 @@ let firstBio = document.querySelector("#hardenBio");
 let firstName = document.querySelector("#hardenName");
 
 hardenButton.addEventListener("click", hardenBio);
-hardenButton.addEventListener("mouseout", nohardenBio);
+hardenButton.addEventListener("dblclick", nohardenBio);
 
 function hardenBio(e) {
   e.preventDefault();
@@ -70,7 +70,7 @@ let secondBio = document.querySelector("#freakBio");
 let secondName = document.querySelector("#freakName");
 
 freakButton.addEventListener("click", freakBio);
-freakButton.addEventListener("mouseout", nofreakBio);
+freakButton.addEventListener("dblclick", nofreakBio);
 
 function freakBio(e) {
   e.preventDefault();
@@ -131,7 +131,7 @@ let thirdBio = document.querySelector("#dameBio");
 let thirdName = document.querySelector("#dameName");
 
 dameButton.addEventListener("click", dameBio);
-dameButton.addEventListener("mouseout", nodameBio);
+dameButton.addEventListener("dblclick", nodameBio);
 
 function dameBio(e) {
   e.preventDefault();
@@ -192,7 +192,7 @@ let fourthBio = document.querySelector("#traeBio");
 let fourthName = document.querySelector("#traeName");
 
 traeButton.addEventListener("click", traeBio);
-traeButton.addEventListener("mouseout", notraeBio);
+traeButton.addEventListener("dblclick", notraeBio);
 
 function traeBio(e) {
   e.preventDefault();
@@ -253,7 +253,7 @@ let fifthBio = document.querySelector("#bealBio");
 let fifthName = document.querySelector("#bealName");
 
 bealButton.addEventListener("click", bealBio);
-bealButton.addEventListener("mouseout", nobealBio);
+bealButton.addEventListener("dblclick", nobealBio);
 
 function bealBio(e) {
   e.preventDefault();
@@ -314,7 +314,7 @@ let sixthBio = document.querySelector("#lukaBio");
 let sixthName = document.querySelector("#lukaName");
 
 lukaButton.addEventListener("click", lukaBio);
-lukaButton.addEventListener("mouseout", nolukaBio);
+lukaButton.addEventListener("dblclick", nolukaBio);
 
 function lukaBio(e) {
   e.preventDefault();
@@ -375,7 +375,7 @@ let seventhBio = document.querySelector("#kawhiBio");
 let seventhName = document.querySelector("#kawhiName");
 
 kawhiButton.addEventListener("click", kawhiBio);
-kawhiButton.addEventListener("mouseout", nokawhiBio);
+kawhiButton.addEventListener("dblclick", nokawhiBio);
 
 function kawhiBio(e) {
   e.preventDefault();
@@ -436,7 +436,7 @@ let eigthBio = document.querySelector("#dbookBio");
 let eigthName = document.querySelector("#dbookName");
 
 dbookButton.addEventListener("click", dbookBio);
-dbookButton.addEventListener("mouseout", nodbookBio);
+dbookButton.addEventListener("dblclick", nodbookBio);
 
 function dbookBio(e) {
   e.preventDefault();
@@ -497,7 +497,7 @@ let ninthBio = document.querySelector("#russBio");
 let ninthName = document.querySelector("#russName");
 
 russButton.addEventListener("click", russBio);
-russButton.addEventListener("mouseout", norussBio);
+russButton.addEventListener("dblclick", norussBio);
 
 function russBio(e) {
   e.preventDefault();
@@ -558,7 +558,7 @@ let tenthBio = document.querySelector("#adBio");
 let tenthName = document.querySelector("#adName");
 
 adButton.addEventListener("click", adBio);
-adButton.addEventListener("mouseout", noadBio);
+adButton.addEventListener("dblclick", noadBio);
 
 function adBio(e) {
   e.preventDefault();
@@ -619,7 +619,7 @@ let eleventhBio = document.querySelector("#lbjBio");
 let eleventhName = document.querySelector("#lbjName");
 
 lbjButton.addEventListener("click", lbjBio);
-lbjButton.addEventListener("mouseout", nolbjBio);
+lbjButton.addEventListener("dblclick", nolbjBio);
 
 function lbjBio(e) {
   e.preventDefault();
@@ -680,7 +680,7 @@ let twelthBio = document.querySelector("#lavineBio");
 let twelthName = document.querySelector("#lavineName");
 
 lavineButton.addEventListener("click", lavineBio);
-lavineButton.addEventListener("mouseout", nolavineBio);
+lavineButton.addEventListener("dblclick", nolavineBio);
 
 function lavineBio(e) {
   e.preventDefault();
@@ -741,7 +741,7 @@ let thirteenthBio = document.querySelector("#biBio");
 let thirteenthName = document.querySelector("#biName");
 
 biButton.addEventListener("click", biBio);
-biButton.addEventListener("mouseout", nobiBio);
+biButton.addEventListener("dblclick", nobiBio);
 
 function biBio(e) {
   e.preventDefault();
@@ -802,7 +802,7 @@ let fourteenthBio = document.querySelector("#dmitchBio");
 let fourteenthName = document.querySelector("#dmitchName");
 
 dmitchButton.addEventListener("click", dmitchBio);
-dmitchButton.addEventListener("mouseout", nodmitchBio);
+dmitchButton.addEventListener("dblclick", nodmitchBio);
 
 function dmitchBio(e) {
   e.preventDefault();
@@ -863,7 +863,7 @@ let fifteenthBio = document.querySelector("#siakamBio");
 let fifteenthName = document.querySelector("#siakamName");
 
 siakamButton.addEventListener("click", siakamBio);
-siakamButton.addEventListener("mouseout", nosiakamBio);
+siakamButton.addEventListener("dblclick", nosiakamBio);
 
 function siakamBio(e) {
   e.preventDefault();
